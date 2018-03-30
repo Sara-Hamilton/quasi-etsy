@@ -13,11 +13,8 @@ export class NewShopComponent {
 
   currentDate: Date = new Date();
 
-  // TODO make owner in put a User object instead of a string
+  // TODO make owner input a User object instead of a string
   submitShopForm(owner: string, name: string, city: string){
-    console.log("owner", owner);
-    console.log("name", name);
-    console.log("city", city);
     let newUser = new User(owner, "filler@example.com", "", "", this.currentDate)
     let newShop: Shop = new Shop(newUser, name, this.currentDate);
   }
