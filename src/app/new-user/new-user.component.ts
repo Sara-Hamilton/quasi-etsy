@@ -9,8 +9,10 @@ import { User } from '../models/user.model';
 export class NewUserComponent {
   @Output() sendUser = new EventEmitter();
 
-  submitForm(name: string, email: string, city: string, state: string, joinDate: Date) {
-    let newUser: User = new User(name, email, city, state, joinDate);
+  currentDate: Date = new Date();
+
+  submitUserForm(name: string, email: string, city: string, state: string, joinDate: Date) {
+    let newUser: User = new User(name, email, city, state, this.currentDate);
     this.sendUser.emit(newUser);
   }
 
