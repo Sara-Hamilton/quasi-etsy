@@ -11,9 +11,10 @@ export class NewListingComponent {
   @Input() childCategoryList: Category[];
   @Output() sendListing = new EventEmitter();
 
+  // TODO figure out how make price display cents
   submitListingForm(image: string, description: string, category: string, price: string, shippingTime: string) {
     let newCategory: Category = new Category(category);
     let newListing: Listing = new Listing (image, description, newCategory, parseInt(price), shippingTime);
-
+    this.sendListing.emit(newListing);
   }
 }
