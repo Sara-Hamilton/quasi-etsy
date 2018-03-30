@@ -25,6 +25,8 @@ This is the Epicodus weekly project for week 3 of the JavaScript course.  Its pu
   * leave feedback about a transaction
 
 ### Models
+  * ShopOwner
+  * Shopper
   * Shop
   * Listing
   * Category
