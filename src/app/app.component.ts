@@ -42,8 +42,8 @@ export class AppComponent {
   ]
 
   masterListingList: Listing[] = [
-    new Listing('http://www.lebenslustiger.com/serendipity/archives/303-Square-Bunny-Knit-Pattern-2.html', 'cute knit bunny', new Category('Art & Collectibles'), 6, "2-3 weeks"),
-    new Listing('https://www.pinterest.com/pin/163888873913553506/', 'decorative ceramic dish', new Category('Art & Collectibles'), 8, "6 weeks"),
+    new Listing('http://www.lebenslustiger.com/serendipity/uploads/GreyKnitBunny.jpg', 'cute knit bunny', new Category('Art & Collectibles'), 6, "2-3 weeks"),
+    new Listing('http://www.wvpottery.com/handmadepottery/serving-dish-gg.jpg', 'decorative ceramic dish', new Category('Art & Collectibles'), 89, "6 weeks"),
     new Listing('http://ny-image3.etsy.com/il_fullxfull.56055027.jpg', 'handmade t-shirt with carrots on it for kids', new Category('Clothing & Shoes'), 12, "1 week"),
   ]
 
