@@ -16,6 +16,7 @@ export class NewShopComponent {
   // owner should be a User object - will be current logged in user - unsure how to get user
   submitShopForm(owner: User, name: string, joinDate: Date) {
     let newShop: Shop = new Shop(owner, name, this.currentDate);
+    console.log(newShop);
   }
 
 }
