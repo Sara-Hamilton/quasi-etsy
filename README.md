@@ -23,6 +23,7 @@ This is the Epicodus weekly project for week 3 of the JavaScript course.  Its pu
   * create a shop
   * create listings
   * assign categories to listings
+  * edit listings
 
 ### Models
   * User
