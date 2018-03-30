@@ -13,6 +13,7 @@ import { User } from './models/user.model';
 export class AppComponent {
   title = 'Quasi Etsy';
   currentDate = new Date();
+  reusableUser = new User('Jenna', 'jenna@example.com', 'Portland', 'OR', this.currentDate);
 
   masterUserList: User[] = [
     new User('Jenna', 'jenna@example.com', 'Portland', 'OR', this.currentDate),
@@ -22,7 +23,12 @@ export class AppComponent {
     new User('Charlie', 'charlie@example.com', 'Los Angeles', 'CA', this.currentDate)
   ]
 
-  masterShopList: Shop[] = []
+  masterShopList: Shop[] = [
+    new Shop(reusableUser, "Jenna's Jams", currentDate),
+    new Shop(reusableUser, "Vim & Vinegar", currentDate),
+    new Shop(reusableUser, "Object Shop", currentDate),
+    new Shop(reusableUser, "Urban Boutique", currentDate),
+  ]
 
   masterCategoryList: Category[] = [
     new Category('Jewelry & Accessories'),
