@@ -32,12 +32,16 @@ This is the Epicodus weekly project for week 3 of the JavaScript course.  Its pu
   * Feedback
 
 ### Components
+  * new-user
+  * new-shop
+  * new-listing
   * add-category
   * show-listing
-  * add-to-cart
   * favorite-listing
   * favorite-shop
   * add-feedback
+  * edit-listing
+  * add-to-cart
 
 ### Pipes
   * shop
