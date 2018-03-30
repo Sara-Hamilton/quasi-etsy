@@ -17,6 +17,7 @@ export class NewShopComponent {
   submitShopForm(owner: string, name: string, city: string){
     let newUser = new User(owner, "filler@example.com", "", "", this.currentDate)
     let newShop: Shop = new Shop(newUser, name, this.currentDate);
+    this.sendShop.emit(newShop);
   }
 
 }
