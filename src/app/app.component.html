@@ -4,5 +4,6 @@
   <app-new-user (sendUser)="addUser($event)"></app-new-user>
   <app-new-shop [childUserList]="masterUserList" (sendShop)="addShop($event)"></app-new-shop>
   <app-new-listing [childCategoryList]="masterCategoryList" (sendListing)="addListing($event)"></app-new-listing>
+  <app-listing-list [childListingList]="masterListingList"></app-listing-list>
 
 </div>
