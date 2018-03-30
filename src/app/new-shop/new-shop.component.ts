@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Shop } from '../models/shop.model';
 import { User } from '../models/user.model';
 
@@ -8,6 +8,7 @@ import { User } from '../models/user.model';
   styleUrls: ['./new-shop.component.css']
 })
 export class NewShopComponent {
+  @Input() childUserList: User[];
   @Output() sendShop = new EventEmitter();
 
   currentDate: Date = new Date();

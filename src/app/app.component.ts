@@ -19,6 +19,6 @@ export class AppComponent {
     new User('Steve', 'steve@example.com', 'Albuquerque', 'NM', this.currentDate),
     new User('Kris', 'kris@example.com', 'Seattle', 'WA', this.currentDate),
     new User('Lisa', 'lisa@example.com', 'New York', 'NY', this.currentDate),
-    new User('Charlie', 'charlie@example.com', 'Los Angeles', 'CA', this.currentDate),
+    new User('Charlie', 'charlie@example.com', 'Los Angeles', 'CA', this.currentDate)
   ]
 }
