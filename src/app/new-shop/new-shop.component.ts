@@ -18,8 +18,8 @@ export class NewShopComponent {
     console.log("owner", owner);
     console.log("name", name);
     console.log("city", city);
-    let newUser = new User(owner, "filler@example.com", "")
-    // let newShop: Shop = new Shop(owner, name, this.currentDate);
+    let newUser = new User(owner, "filler@example.com", "", "", this.currentDate)
+    let newShop: Shop = new Shop(newUser, name, this.currentDate);
   }
 
 }
