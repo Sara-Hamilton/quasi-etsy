@@ -21,4 +21,15 @@ export class AppComponent {
     new User('Lisa', 'lisa@example.com', 'New York', 'NY', this.currentDate),
     new User('Charlie', 'charlie@example.com', 'Los Angeles', 'CA', this.currentDate)
   ]
+
+  masterCategoryList: Category[] = [
+    new Category('Jewelry & Accessories'),
+    new Category('Clothing & Shoes'),
+    new Category('Home & Living'),
+    new Category('Wedding & Party'),
+    new Category('Toys & Entertainment'),
+    new Category('Art & Collectibles'),
+    new Category('Craft Supplies & Tools'),
+    new Category('Vintage')
+  ]
 }
