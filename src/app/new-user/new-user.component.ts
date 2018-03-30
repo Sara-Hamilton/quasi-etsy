@@ -14,6 +14,7 @@ export class NewUserComponent {
   submitUserForm(name: string, email: string, city: string, state: string, joinDate: Date) {
     let newUser: User = new User(name, email, city, state, this.currentDate);
     this.sendUser.emit(newUser);
+    console.log("user", newUser);
   }
 
 }

@@ -9,17 +9,18 @@ import { User } from '../models/user.model';
 })
 export class NewShopComponent {
   @Input() childUserList: User[];
-  @Input() shopOwner: User;
+  // @Input() shopOwner: User;
   @Output() sendShop = new EventEmitter();
 
   currentDate: Date = new Date();
 
-  // assignedOwner: User = this.childUserList[2];
+  // assignedOwner: User[] = childUserList;
 
   // owner should be a User object - will be current logged in user - unsure how to get user
-  submitShopForm(name: string) {
-    let newShop: Shop = new Shop(this.shopOwner, name, this.currentDate);
-    console.log(newShop);
+  submitShopForm(name: string, ){
+    console.log("shopNname", name);
+    // let newShop: Shop = new Shop(this.assignedOwner, name, this.currentDate);
+    // console.log("newShop", newShop);
   }
 
 }
