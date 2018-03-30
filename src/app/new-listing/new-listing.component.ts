@@ -1,4 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Listing } from '../models/listing.model';
+import { Category } from '../models/category.model';
 
 @Component({
   selector: 'app-new-listing',
