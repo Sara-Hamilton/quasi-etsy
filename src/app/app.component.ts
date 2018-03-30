@@ -22,6 +22,8 @@ export class AppComponent {
     new User('Charlie', 'charlie@example.com', 'Los Angeles', 'CA', this.currentDate)
   ]
 
+  masterShopList: Shop[] = []
+
   masterCategoryList: Category[] = [
     new Category('Jewelry & Accessories'),
     new Category('Clothing & Shoes'),
@@ -32,4 +34,18 @@ export class AppComponent {
     new Category('Craft Supplies & Tools'),
     new Category('Vintage')
   ]
+
+  masterListingList: Listing[] = []
+
+  addUser(newUser: User) {
+    this.masterUserList.push(newUser);
+  }
+
+  addShop(newShop: Shop) {
+    this.masterShopList.push(newShop);
+  }
+
+  addListing(newListing: Listing) {
+    this.masterListingList.push(newListing);
+  }
 }
