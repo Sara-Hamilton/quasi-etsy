@@ -1,3 +1,6 @@
+import { Shop } from './shop.model';
+import { Listing } from './listing.model';
+
 export class User {
   public shopOwner: boolean = false;
   public profile: string = "";
