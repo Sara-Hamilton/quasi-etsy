@@ -24,10 +24,10 @@ export class AppComponent {
   ]
 
   masterShopList: Shop[] = [
-    new Shop(reusableUser, "Jenna's Jams", currentDate),
-    new Shop(reusableUser, "Vim & Vinegar", currentDate),
-    new Shop(reusableUser, "Object Shop", currentDate),
-    new Shop(reusableUser, "Urban Boutique", currentDate),
+    new Shop(this.reusableUser, "Jenna's Jams", this.currentDate),
+    new Shop(this.reusableUser, "Vim & Vinegar", this.currentDate),
+    new Shop(this.reusableUser, "Object Shop", this.currentDate),
+    new Shop(this.reusableUser, "Urban Boutique", this.currentDate),
   ]
 
   masterCategoryList: Category[] = [
@@ -41,7 +41,11 @@ export class AppComponent {
     new Category('Vintage')
   ]
 
-  masterListingList: Listing[] = []
+  masterListingList: Listing[] = [
+    new Listing('http://www.lebenslustiger.com/serendipity/archives/303-Square-Bunny-Knit-Pattern-2.html', 'cute knit bunny', new Category('Art & Collectibles'), 6, "2-3 weeks"),
+    new Listing('https://www.pinterest.com/pin/163888873913553506/', 'decorative ceramic dish', new Category('Art & Collectibles'), 8, "6 weeks"),
+    new Listing('http://ny-image3.etsy.com/il_fullxfull.56055027.jpg', 'handmade t-shirt with carrots on it for kids', new Category('Clothing & Shoes'), 12, "1 week"),
+  ]
 
   addUser(newUser: User) {
     this.masterUserList.push(newUser);
@@ -56,6 +60,6 @@ export class AppComponent {
   }
 
   addCategory(selectedListing, category) {
-    this.selectedListing.category = category;
+    selectedListing.category = category;
   }
 }
