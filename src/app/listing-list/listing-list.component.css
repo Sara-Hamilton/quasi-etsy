@@ -13,3 +13,8 @@ li {
   display: inline-block;
   color: gray;
 }
+
+.card .card-block {
+  max-height:300px;
+  overflow:auto;
+}
