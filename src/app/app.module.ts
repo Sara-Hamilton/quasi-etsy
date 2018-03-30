@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NewUserComponent } from './new-user/new-user.component';
 import { NewShopComponent } from './new-shop/new-shop.component';
 import { NewListingComponent } from './new-listing/new-listing.component';
+import { ListingListComponent } from './listing-list/listing-list.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { NewListingComponent } from './new-listing/new-listing.component';
     AppComponent,
     NewUserComponent,
     NewShopComponent,
-    NewListingComponent
+    NewListingComponent,
+    ListingListComponent
   ],
   imports: [
     BrowserModule
