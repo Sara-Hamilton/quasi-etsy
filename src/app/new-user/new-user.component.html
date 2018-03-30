@@ -4,37 +4,42 @@
 
   <h3>Sign Up</h3>
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-1">
       <label>Name: </label>
     </div>
     <div class="col-sm-8">
       <input #userName>
     </div>
+  </div>
+  <div class="row">
 
-    <div class="col-sm-4">
+    <div class="col-sm-1">
       <label>email: </label>
     </div>
     <div class="col-sm-8">
       <input #userEmail>
     </div>
+  </div>
 
-    <div class="col-sm-4">
+  <div class="row">
+    <div class="col-sm-1">
       <label>City: </label>
     </div>
     <div class="col-sm-8">
       <input #userCity>
     </div>
+  </div>
 
-    <div class="col-sm-4">
+  <div class="row">
+    <div class="col-sm-1">
       <label>State: </label>
     </div>
     <div class="col-sm-8">
       <input #userState>
     </div>
-
   </div>
+
   <button class="btn" (click)="submitUserForm(userName.value, userEmail.value, userCity.value, userState.value)">Submit</button>
 </div>
 
-  </div>
 </div>
