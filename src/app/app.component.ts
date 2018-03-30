@@ -48,4 +48,8 @@ export class AppComponent {
   addListing(newListing: Listing) {
     this.masterListingList.push(newListing);
   }
+
+  addCategory(selectedListing, category) {
+    this.selectedListing.category = category;
+  }
 }
