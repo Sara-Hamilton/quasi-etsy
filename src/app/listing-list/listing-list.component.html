@@ -5,3 +5,14 @@
 <ul>
   <li *ngFor="let currentListing of childListingList">{{currentListing.description}}</li>
 </ul>
+<div class="container-flex">
+  <div *ngFor="let currentListing of childListingList" class="card-block center" style="width:300px">
+    <img class="card-img-top resize" src={{currentListing.image}} alt={{currentListing.description}}>
+    <div class="card-body">
+      <h6 class="card-title">{{currentListing.title}}</h6>
+      <p>ShopNameHere</p>
+      <p>{{currentListing.feedback}}</p>
+      <p>${{currentListing.price}}.00</p>
+    </div>
+  </div>
+</div>
