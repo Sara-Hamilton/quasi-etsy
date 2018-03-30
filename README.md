@@ -8,14 +8,8 @@
 This is the Epicodus weekly project for week 3 of the JavaScript course.  Its purpose is to display understanding of Angular.
 
 ### User Stories
-* a shop owner can
-  * create an account
-  * create a shop
-  * create listings
-  * assign categories to listings
 
-
-* a shopper can
+* a user can
   * create an account
   * view listings
   * mark a listing as favorite
@@ -24,9 +18,14 @@ This is the Epicodus weekly project for week 3 of the JavaScript course.  Its pu
   * add items to a cart
   * leave feedback about a transaction
 
+
+* a user who is also a shop owner can
+  * create a shop
+  * create listings
+  * assign categories to listings
+
 ### Models
-  * ShopOwner
-  * Shopper
+  * User
   * Shop
   * Listing
   * Category
