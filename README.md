@@ -35,13 +35,18 @@ This is the Epicodus weekly project for week 3 of the JavaScript course.  Its pu
   * new-user
   * new-shop
   * new-listing
-  * add-category
-  * show-listing
-  * favorite-listing
-  * favorite-shop
+  * listing-list
   * add-feedback
   * edit-listing
-  * add-to-cart
+
+### Methods in app.component.ts
+  * addUser
+  * addShop
+  * addListing
+  * addCategory
+  * favoriteListing
+  * favoriteShop
+  * addToCart
 
 ### Pipes
   * shop
