@@ -6,7 +6,8 @@
   <div class="form-group">
     <label for="users">Owner:</label>
     <select  class="form-control" #shopOwner>
-      <option *ngFor="let currentUser of childUserList">{{currentUser.name}}</option>
+      <option *ngFor="let currentUser of childUserList">{{currentUser.name}}
+      <input #city value={{currentUser.city}}/></option>
     </select>
   </div>
-  <button class="btn" (click)="submitShopForm(shopOwner.value, shopName.value)">Submit</button>
+  <button class="btn" (click)="submitShopForm(shopOwner.value, shopName.value, city.value)">Submit</button>
