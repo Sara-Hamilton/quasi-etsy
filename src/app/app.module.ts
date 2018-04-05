@@ -7,6 +7,7 @@ import { NewUserComponent } from './new-user/new-user.component';
 import { NewShopComponent } from './new-shop/new-shop.component';
 import { NewListingComponent } from './new-listing/new-listing.component';
 import { ListingListComponent } from './listing-list/listing-list.component';
+import { MarketplaceComponent } from './marketplace/marketplace.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ListingListComponent } from './listing-list/listing-list.component';
     NewUserComponent,
     NewShopComponent,
     NewListingComponent,
-    ListingListComponent
+    ListingListComponent,
+    MarketplaceComponent
   ],
   imports: [
     BrowserModule
