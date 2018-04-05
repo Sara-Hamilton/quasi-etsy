@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Listing } from '../models/listing.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-marketplace',
