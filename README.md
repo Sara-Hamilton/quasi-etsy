@@ -48,49 +48,49 @@ This is the Epicodus weekly project for week 3 of the JavaScript course.  Its pu
 ### User Stories
 
 * a user can
-  * create an account
-  * view listings
-  * mark a listing as favorite
-  * mark a shop as favorite
-  * filter listings by category
-  * add items to a cart
-  * leave feedback about a transaction
+  * create an account - needs to be done
+  * view listings - completed
+  * mark a listing as favorite - needs to be done
+  * mark a shop as favorite - needs to be done
+  * filter listings by category - needs to be done
+  * add items to a cart - needs to be done
+  * leave feedback about a transaction - needs to be done
 
 
 * a user who is also a shop owner can
-  * create a shop
-  * create listings
-  * assign categories to listings
-  * edit listings
+  * create a shop - in process
+  * create listings - completed
+  * assign categories to listings - needs to be done
+  * edit listings - needs to be done
 
 ### Models
-  * User
-  * Shop
-  * Listing
-  * Category
-  * Feedback
+  * User - completed
+  * Shop - in process
+  * Listing - in process
+  * Category - completed
+  * Feedback - in process
 
 ### Components
-  * new-user
-  * new-shop
-  * new-listing
-  * listing-list
-  * add-feedback
-  * edit-listing
+  * new-user - completed
+  * new-shop - in process
+  * new-listing - completed
+  * listing-list - in process
+  * add-feedback - needs to be done
+  * edit-listing - needs to be done
 
 ### Methods in app.component.ts
-  * addUser
-  * addShop
-  * addListing
-  * addCategory
-  * favoriteListing
-  * favoriteShop
-  * addToCart
+  * addUser - completed
+  * addShop - completed
+  * addListing - completed
+  * addCategory - completed
+  * favoriteListing - needs to be done
+  * favoriteShop - needs to be done
+  * addToCart - needs to be done
 
 ### Pipes
-  * shop
-  * category
-  * favorite
+  * shop - needs to be done
+  * category - needs to be done
+  * favorite - needs to be done
 
 
 ## Technologies Used
