@@ -7,5 +7,5 @@ export class User {
   public favoriteShops: Shop[] = [];
   public favoriteItems: Listing[] = [];
   public picture: string = "";
-  constructor(public name: string, public email: string, public city: string, public state: string, public joinDate: string) {}
+  constructor(public name: string, public email: string, public city: string, public state: string, public joinDate: string, public id: string) {}
 }

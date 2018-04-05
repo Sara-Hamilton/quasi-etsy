@@ -9,5 +9,5 @@ export class Shop {
   public feedback: Feedback[] = [];
   public listings: Listing[] = [];
 
-  constructor(public ownerId: string, public name: string, public joinDate: string) {}
+  constructor(public ownerId: string, public name: string, public joinDate: string, public id: string) {}
 }

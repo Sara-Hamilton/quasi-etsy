@@ -22,7 +22,10 @@ import { ListingDetailComponent } from './listing-detail/listing-detail.componen
     ListingDetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,5 +6,5 @@ export class Listing {
   public feedback: Feedback[] = [];
   public favoritedBy: User[] = [];
 
-  constructor(public image: string, public description: string, public category: string, public price: number, public shippingTime: string) {}
+  constructor(public image: string, public description: string, public category: string, public price: number, public shippingTime: string, public id: string) {}
 }
