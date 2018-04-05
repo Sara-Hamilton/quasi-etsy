@@ -7,43 +7,6 @@
 # Description
 This is the Epicodus weekly project for week 3 of the JavaScript course.  Its purpose is to display understanding of Angular.  
 
-## Specifications
-| Type of Spec | Description | Status|
-| :---------------| :---------------| :---------------|
-| User Story | A user can create an account | needs to be done |
-| User Story | A user can view listings | completed |
-| User Story | A user can mark a listing as favorite | needs to be done |
-| User Story | A user can mark a shop as favorite | needs to be done |
-| User Story | A user can filter listings by category | needs to be done |
-| User Story | A user can add items to a cart | needs to be done |
-| User Story | A user can leave feedback about a transaction | needs to be done |
-| User Story | A user who is also a shop owner can create a shop | needs to be done |
-| User Story | A user who is also a shop owner can create listings | completed |
-| User Story | A user who is also a shop owner can assign categories to listings | needs to be done |
-| User Story | A user who is also a shop owner can edit listings | needs to be done |
-| User Story | A user can view listings | completed |
-| Model | User | completed |
-| Model | Shop | in process |
-| Model | Listing | in process |
-| Model | Category | completed |
-| Model | Feedback | in process |
-| Component | new-user | completed |
-| Component | new-shop | in process |
-| Component | new-listing | completed |
-| Component | listing-list | in process |
-| Component | add-feedback | needs to be done |
-| Component | edit listing | needs to be done |
-| Method | addUser | completed |
-| Method | addShop | completed |
-| Method | addListing | completed |
-| Method | addCategory | completed |
-| Method | favoriteListing | needs to be done |
-| Method | favoriteShop | needs to be done |
-| Method | addToCart | needs to be done |
-| Pipe | shop | needs to be done |
-| Pipe | category | needs to be done |
-| Pipe | favorite | needs to be done |
-
 
 ### User Stories
 
