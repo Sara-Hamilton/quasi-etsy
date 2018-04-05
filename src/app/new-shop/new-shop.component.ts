@@ -15,8 +15,8 @@ export class NewShopComponent {
 
   // TODO make owner input a User object instead of a string
   submitShopForm(owner: string, name: string, city: string){
-    let newUser = new User(owner, "filler@example.com", "", "", this.currentDate)
-    let newShop: Shop = new Shop(newUser, name, this.currentDate);
+    // let newUser = new User(owner, "filler@example.com", "", "", '01-01-2011', '88');
+    let newShop: Shop = new Shop('6', name, '09-09-2009', '44');
     this.sendShop.emit(newShop);
   }
 
