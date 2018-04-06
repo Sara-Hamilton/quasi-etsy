@@ -13,15 +13,22 @@
 </div>
 
 <div class="form-group">
-  <label for="users">Category:</label>
-  <select  class="form-control" #listingCategory>
-    <option *ngFor="let currentCategory of childCategoryList">{{currentCategory.name}}</option>
+  <label>Category:</label>
+  <select class="form-control" #listingCategory>
+    <option value="Jewelry and Accessories">Jewelry and Accessories</option>
+    <option value="Clothing and Shoes">Clothing and Shoes</option> -->
+    <option value="Home and Living">Home and Living</option>
+    <option value="Wedding and Party">Wedding and Party</option>
+    <option value="Toys and Entertainment">Toys and Entertainment</option>
+    <option value="Art and Collectibles">Art and Collectibles</option>
+    <option value="Craft Supplies and Tools">Craft Supplies and Tools</option>
+    <option value="Vintage">Vintage</option>
   </select>
 </div>
 
 <div class="form-group">
   <label>Price:</label>
-  <input #listingPrice class="form-control">
+  <input #listingPrice class="form-control" type="number" min="0">
 </div>
 
 <div class="form-group">
