@@ -1,4 +1,13 @@
-a, a:hover {
+a {
+  color: gray;
+}
+
+.logo, a:hover {
   color: #F56400;
   text-decoration: none;
+}
+
+
+.categories {
+  border: 1px solid lightgray;
 }
