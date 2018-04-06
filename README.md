@@ -22,7 +22,7 @@ This is the Epicodus weekly project for weeks 3 and 4 of the JavaScript course. 
 
   ### Components
     * new-listing
-    * marketplace 
+    * marketplace
 
   ### Methods
     * addUser
@@ -35,6 +35,7 @@ This is the Epicodus weekly project for weeks 3 and 4 of the JavaScript course. 
 ## Functionality to Implemented at a Future Date
   ### User Stories
   * a user will be able to
+    * search listings 
     * create an account
     * mark a listing as favorite
     * mark a shop as favorite
