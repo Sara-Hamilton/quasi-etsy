@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Listing } from '../models/listing.model';
 import { ListingService } from '../listing.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-listing-detail',
@@ -16,6 +17,7 @@ export class ListingDetailComponent implements OnInit {
   showEditForm: Boolean = false;
 
   constructor(
+    private router: Router,
     private route: ActivatedRoute,
     private location: Location,
     private listingService: ListingService
@@ -30,6 +32,13 @@ export class ListingDetailComponent implements OnInit {
 
   editCurrentListing() {
     this.showEditForm = true;
+  }
+
+  deleteCurrentListingFromDatabase() {
+    if(confirm("Are you sure you want to delete this listing?")){
+      this.listingService.deleteListing(this.listingToDisplay);
+    }
+    this.router.navigate(['']);
   }
 
 }
