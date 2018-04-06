@@ -1,8 +1,12 @@
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-light">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand logo" routerLink="">Quasi-Etsy</a>
+      <h1><a class="logo" routerLink="">QuasiEtsy</a></h1>
     </div>
+    <form class="form-inline my-8 my-lg-0">
+      <input class="form-control mr-sm-0" type="search" placeholder="Search for items or shops" aria-label="Search">
+      <button class="btn btn-outline my-2 my-sm-0 orange" type="submit">Search</button>
+    </form>
     <div class="links">
       <ul class="nav navbar-nav navbar-right">
         <li><a routerLink="">Listings</a></li>
@@ -13,7 +17,7 @@
 </nav>
 
 <div class="container">
-<h1 class="logo">{{ title }}</h1>
+<!-- <h1 class="logo">{{ title }}</h1> -->
 
   <router-outlet></router-outlet>
 

@@ -6,3 +6,8 @@ li {
   font-family: "Guardian-egyptt", Georgia;
   color: #F56400;
 }
+
+.orange {
+  background-color: #F56400;
+  color: white;
+}
