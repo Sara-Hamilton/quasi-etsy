@@ -1,22 +1,25 @@
 import { Injectable } from '@angular/core';
 import { Listing } from './models/listing.model';
-import { LISTINGS } from './mock-listings';
-import { Router } from '@angular/router';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+
 
 @Injectable()
 export class ListingService {
+  listings: FirebaseListObservable<any[]>;
 
-  constructor() { }
-
-  getListings() {
-    return LISTINGS;
+  constructor(private database: AngularFireDatabase) {
+    this.listings = database.list('listings');
   }
 
-  getListingById(listingId: number){
-    for (var i = 0; i <= LISTINGS.length - 1; i++) {
-      if (LISTINGS[i].id === listingId) {
-        return LISTINGS[i];
-      }
-    }
+  getListings() {
+    return this.listings;
+  }
+
+  getListingById(listingId: string){
+    return this.database.object('projects/' + listingId);
+  }
+
+  addListing(newListing) {
+    this.listings.push(newListing);
   }
 }

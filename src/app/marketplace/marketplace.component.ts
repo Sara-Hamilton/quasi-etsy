@@ -3,6 +3,7 @@ import { Listing } from '../models/listing.model';
 import { Category } from '../models/category.model';
 import { Router } from '@angular/router';
 import { ListingService } from '../listing.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-marketplace',
@@ -11,7 +12,8 @@ import { ListingService } from '../listing.service';
   providers: [ListingService]
 })
 export class MarketplaceComponent implements OnInit {
-  listings: Listing[];
+  listings: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private listingService: ListingService) {}
 
@@ -19,8 +21,8 @@ export class MarketplaceComponent implements OnInit {
     this.listings = this.listingService.getListings();
   }
 
-  goToDetailPage(clickedListing: Listing) {
-     this.router.navigate(['listings', clickedListing.id]);
+  goToDetailPage(clickedListing) {
+     this.router.navigate(['listings', clickedListing.$key]);
    };
 
   // listings: Listing[] = [

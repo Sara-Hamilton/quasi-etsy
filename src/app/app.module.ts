@@ -11,7 +11,16 @@ import { NewListingComponent } from './new-listing/new-listing.component';
 // import { ListingListComponent } from './listing-list/listing-list.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { ListingDetailComponent } from './listing-detail/listing-detail.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+}
 
 @NgModule({
   declarations: [
@@ -27,7 +36,9 @@ import { ListingDetailComponent } from './listing-detail/listing-detail.componen
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

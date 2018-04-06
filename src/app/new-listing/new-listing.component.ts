@@ -19,7 +19,7 @@ export class NewListingComponent {
   // TODO figure out how make price display cents
   submitListingForm(image: string, description: string, category: string, price: string, shippingTime: string) {
     let newCategory: Category = new Category(category);
-    let newListing: Listing = new Listing (image, description, category, parseInt(price), shippingTime, 5);
+    let newListing: Listing = new Listing (image, description, category, parseInt(price), shippingTime);
     // this.listingService.addListing(newListing);
     // this.navigateToNewListing();
   }

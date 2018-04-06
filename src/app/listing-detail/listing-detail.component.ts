@@ -11,8 +11,8 @@ import { ListingService } from '../listing.service';
   providers: [ListingService]
 })
 export class ListingDetailComponent implements OnInit {
-  listingId: number;
-  listingToDisplay: Listing;
+  listingId: string;
+  listingToDisplay;
 
   constructor(
     private route: ActivatedRoute,
@@ -22,7 +22,7 @@ export class ListingDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-     this.listingId = parseInt(urlParameters['id']);
+     this.listingId = urlParameters['id'];
     });
     this.listingToDisplay = this.listingService.getListingById(this.listingId);
   }
