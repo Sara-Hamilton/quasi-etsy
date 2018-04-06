@@ -11,3 +11,16 @@ li {
   background-color: #F56400;
   color: white;
 }
+
+.btn-orange {
+  color: white;
+}
+
+.btn-orange,
+.btn-orange:hover,
+.btn-orange:active,
+.btn-orange:visited,
+.btn-orange:focus {
+    background-color: #F56400;
+    border-color: #F56400;
+}

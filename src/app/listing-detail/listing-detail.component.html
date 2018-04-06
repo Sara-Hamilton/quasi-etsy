@@ -22,8 +22,6 @@
   </div>
 </div>
 
-<!-- <div *ngIf="admin==true"> -->
-  <button class="btn btn-success" (click)="editCurrentListing()">Edit</button>
-  <button class="btn btn-danger" (click)="deleteCurrentListingFromDatabase()">Delete</button>
-  <app-edit-listing *ngIf="showEditForm" [selectedListing]="listingToDisplay"></app-edit-listing>
-<!-- </div> -->
+<button class="btn btn-orange" (click)="editCurrentListing()">Edit</button>
+<button class="btn btn-outline-danger" (click)="deleteCurrentListingFromDatabase()">Delete</button>
+<app-edit-listing *ngIf="showEditForm" [selectedListing]="listingToDisplay"></app-edit-listing>
