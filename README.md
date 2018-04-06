@@ -64,6 +64,8 @@ This is the Epicodus weekly project for week 3 of the JavaScript course.  Its pu
 * Node JS
 * Angular
 
+https://quasi-etsy.firebaseapp.com
+
 ## Installation
 
 clone the github respository
