@@ -8,13 +8,13 @@ import { routing } from './app.routing';
 import { NewUserComponent } from './new-user/new-user.component';
 import { NewShopComponent } from './new-shop/new-shop.component';
 import { NewListingComponent } from './new-listing/new-listing.component';
-// import { ListingListComponent } from './listing-list/listing-list.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { ListingDetailComponent } from './listing-detail/listing-detail.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { EditListingComponent } from './edit-listing/edit-listing.component';
+import { CategoryPipe } from './category.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,10 +29,10 @@ export const firebaseConfig = {
     NewUserComponent,
     NewShopComponent,
     NewListingComponent,
-    // ListingListComponent,
     MarketplaceComponent,
     ListingDetailComponent,
-    EditListingComponent
+    EditListingComponent,
+    CategoryPipe
   ],
   imports: [
     BrowserModule,

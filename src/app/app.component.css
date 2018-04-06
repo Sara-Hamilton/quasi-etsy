@@ -2,7 +2,7 @@ a {
   color: gray;
 }
 
-.logo, a:hover {
+.logo {
   color: #F56400;
   text-decoration: none;
 }
