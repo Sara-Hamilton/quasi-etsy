@@ -26,4 +26,8 @@ export class MarketplaceComponent implements OnInit {
 
   filterByCategory: string = "Art & Collectibles";
 
+  onChange(clickedCategory) {
+    this.filterByCategory = clickedCategory;
+  }
+
 }
