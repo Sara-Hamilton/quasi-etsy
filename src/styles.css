@@ -1,3 +1,8 @@
 li {
   list-style: none;
 }
+
+.logo {
+  font-family: "Guardian-egyptt", Georgia;
+  color: #F56400;
+}
