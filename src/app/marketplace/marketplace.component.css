@@ -14,7 +14,8 @@ li {
   color: gray;
 }
 
-.card .card-block {
+/*.card .card-block {
+  min-height: 300px;
   max-height:300px;
-  overflow:auto;
-}
+  /*overflow:auto;*/
+/*}*/
