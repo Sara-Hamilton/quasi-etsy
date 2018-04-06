@@ -16,7 +16,7 @@ export class ListingService {
   }
 
   getListingById(listingId: string){
-    return this.database.object('projects/' + listingId);
+    return this.database.object('listings/' + listingId);
   }
 
   addListing(newListing) {

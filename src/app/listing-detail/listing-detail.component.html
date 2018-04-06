@@ -1,9 +1,24 @@
 <p>
-  listing-detail works!
+  Preview your new listing
 </p>
 
 <div>
-  <h3>{{listingToDisplay.description}}</h3>
-  <h4>{{listingToDisplay.category}}</h4>
-  <p>{{listingToDisplay.price}}</p>
+  <h3>{{(listingToDisplay | async)?.description}}</h3>
+  <h4>Category: {{(listingToDisplay | async)?.category}}</h4>
+</div>
+
+<div class="container">
+  <div class="container-flex">
+    <ul class="card-block">
+      <li><div class="card card-block" style="width:300px">
+        <img class="card-img-top resize" src="{{(listingToDisplay | async)?.image}}" alt="{{(listingToDisplay | async)?.description}}">
+        <div class="card-body">
+          <h5 class="card-text">{{(listingToDisplay | async)?.description}}</h5>
+          <div class="card-text">ShopNameHere</div>
+          <div class="card-text">${{(listingToDisplay | async)?.price}}.00</div><br>
+        </div>
+      </div>
+      </li>
+    </ul>
+  </div>
 </div>
