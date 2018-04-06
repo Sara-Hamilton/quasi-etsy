@@ -24,7 +24,7 @@ export class MarketplaceComponent implements OnInit {
      this.router.navigate(['listings', clickedListing.$key]);
    };
 
-  filterByCategory: string = "Art & Collectibles";
+  filterByCategory: string = "";
 
   onChange(clickedCategory) {
     this.filterByCategory = clickedCategory;
