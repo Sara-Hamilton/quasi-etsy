@@ -1,17 +1,29 @@
-<div class="card">
+<div class="form">
 <h4>Edit Listing</h4>
+<div class="form-group">
   <label>Image url:</label>
   <input [(ngModel)]="currentListingObject.image">
+</div>
+<div class="form-group">
   <label>Shop Name:</label>
   <input [(ngModel)]="currentListingObject.shop">
+</div>
+<div class="form-group">
   <label>Description:</label>
   <input [(ngModel)]="currentListingObject.description">
+</div>
+<div class="form-group">
   <label>Category: </label>
   <input [(ngModel)]="currentListingObject.category">
+</div>
+<div class="">
   <label>Price:</label>
   <input [(ngModel)]="currentListingObject.price">
+</div>
+<div class="">
   <label>Time to Ship: </label>
   <input [(ngModel)]="currentListingObject.shippingTime">
+</div>
 </div>
 
 <button class="btn btn-success" (click)="updateListingInDatabase(currentListingObject)">Save</button>
