@@ -2,7 +2,7 @@
   marketplace works!
 </p>
 <h2>Listings</h2>
-<div class="footer-clearance">
+<!-- <div class="footer-clearance"> -->
   <div *ngFor="let listing of listings | async" class="card card-default">
     <div class="card-body">
       <h3 (click)="goToDetailPage(listing)"><em>{{listing.description}}</em> by {{listing.category}}</h3>
@@ -13,4 +13,4 @@
       </div> -->
     </div>
   </div>
-</div>
+<!-- </div> -->

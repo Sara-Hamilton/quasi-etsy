@@ -8,7 +8,7 @@ import { routing } from './app.routing';
 import { NewUserComponent } from './new-user/new-user.component';
 import { NewShopComponent } from './new-shop/new-shop.component';
 import { NewListingComponent } from './new-listing/new-listing.component';
-import { ListingListComponent } from './listing-list/listing-list.component';
+// import { ListingListComponent } from './listing-list/listing-list.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { ListingDetailComponent } from './listing-detail/listing-detail.component';
 
@@ -19,7 +19,7 @@ import { ListingDetailComponent } from './listing-detail/listing-detail.componen
     NewUserComponent,
     NewShopComponent,
     NewListingComponent,
-    ListingListComponent,
+    // ListingListComponent,
     MarketplaceComponent,
     ListingDetailComponent
   ],
