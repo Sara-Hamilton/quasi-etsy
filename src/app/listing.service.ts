@@ -22,4 +22,8 @@ export class ListingService {
   addListing(newListing) {
     this.listings.push(newListing);
   }
+
+  getLastListingId() {
+    return this.database.list('listings');
+  }
 }
