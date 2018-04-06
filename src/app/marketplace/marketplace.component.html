@@ -3,14 +3,51 @@
 </p>
 <h2>Listings</h2>
 <!-- <div class="footer-clearance"> -->
-  <div *ngFor="let listing of listings | async" class="card card-default">
+  <!-- <div *ngFor="let listing of listings | async" class="card card-default">
     <div class="card-body">
-      <h3 (click)="goToDetailPage(listing)"><em>{{listing.description}}</em> by {{listing.category}}</h3>{{listing.$key}}
+      <h3 (click)="goToDetailPage(listing)"><em>{{listing.description}}</em> by {{listing.category}}</h3>{{listing.$key}} -->
       <!-- <div *ngIf="currentRoute === '/admin'">
         {{listing.description}}
         <hr>
         <app-edit-listing [selectedListing]="listing"></app-edit-listing>
       </div> -->
-    </div>
-  </div>
+    <!-- </div>
+  </div> -->
 <!-- </div> -->
+
+<!-- <div class="container"> -->
+  <!-- <div class="card-body"> -->
+    <div class="container-flex">
+
+        <ul class="card-block" (click)="goToDetailPage(listing)">
+          <li *ngFor="let listing of listings | async"><div class="card card-block" style="width:250px; height:350px">
+            <img class="card-img-top resize" src="{{listing.image}}" alt="{{listing.description}}">
+            <div class="card-body">
+              <h5 class="card-text">{{listing.description}}</h5>
+              <div class="card-text">ShopNameHere</div>
+              <div class="card-text">${{listing.price}}.00</div><br>
+            </div>
+          </div>
+          </li>
+        </ul>
+
+    </div>
+  <!-- </div> -->
+<!-- </div> -->
+
+
+<!-- <div class="container">
+  <div class="container-flex">
+    <ul class="card-block" (click)="goToDetailPage(listing)">
+      <li><div class="card card-block" style="width:300px">
+        <img class="card-img-top resize" src="{{listing.image}}" alt="{{listing.description}}">
+        <div class="card-body">
+          <h5 class="card-text">{{listing.description}}</h5>
+          <div class="card-text">ShopNameHere</div>
+          <div class="card-text">${{listing.price}}.00</div><br>
+        </div>
+      </div>
+      </li>
+    </ul>
+  </div>
+</div> -->
