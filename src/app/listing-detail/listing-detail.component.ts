@@ -13,6 +13,7 @@ import { ListingService } from '../listing.service';
 export class ListingDetailComponent implements OnInit {
   listingId: string;
   listingToDisplay;
+  showEditForm: Boolean = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -25,6 +26,10 @@ export class ListingDetailComponent implements OnInit {
      this.listingId = urlParameters['id'];
     });
     this.listingToDisplay = this.listingService.getListingById(this.listingId);
+  }
+
+  editCurrentListing() {
+    this.showEditForm = true;
   }
 
 }

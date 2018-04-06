@@ -20,3 +20,16 @@
     </ul>
   </div>
 </div>
+
+<!-- <div *ngIf="admin==true"> -->
+  <button class="btn btn-success" (click)="editCurrentListing()">Edit</button>
+  <button class="btn btn-danger" (click)="deleteCurrentListingFromDatabase()">Delete</button>
+  <app-edit-listing *ngIf="showEditForm" [selectedListing]="listingToDisplay"></app-edit-listing>
+<!-- </div> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <a class="text-muted" (click)="administerPrivileges()">Admin</a>
+  </div>
+</footer>

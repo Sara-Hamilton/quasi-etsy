@@ -1,56 +1,15 @@
-<p>
-  edit-listing works!
-</p>
-
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Add New Listing to Shop</h3>
-  </div>
-  <div class="panel-body">
-    <div>
-      <div>
-        <label>Picture url:</label>
-        <br>
-        <input #newImage>
-      </div>
-
-      <div>
-        <label>Description:</label>
-        <br>
-        <input #newDescription>
-      </div>
-
-      <div>
-        <label>Category:</label>
-        <br>
-        <select #newCategory>
-          <option value="Jewelry and Accessories">Jewelry and Accessories</option>
-          <option value="Clothing and Shoes">Clothing and Shoes</option>
-          <option value="Home and Living">Home and Living</option>
-          <option value="Wedding and Party">Wedding and Party</option>
-          <option value="Toys and Entertainment">Toys and Entertainment</option>
-          <option value="Art and Collectibles">Art and Collectibles</option>
-          <option value="Craft Supplies and Tools">Craft Supplies and Tools</option>
-          <option value="Vintage">Vintage</option>
-        </select>
-      </div>
-
-      <div>
-        <label>Price:</label>
-        <br>
-        <input #newPrice>
-      </div>
-
-      <div>
-        <label>Amount of Time to Ship:</label>
-        <br>
-        <input #newShippingTime>
-      </div>
-      <button (click)="submitForm(newImage.value, newDescription.value, newCategory.value, newPrice.value, newShippingTime.value); newTitle.value=''; newImage.value=''; newDescription.value=''; newCategory.value=''; newPrice.value=''; newShippingTime.value=''">Add</button>
-    </div>
-  </div>
+<div class="card">
+<h4>Edit Listing</h4>
+  <label>Image url:</label>
+  <input [(ngModel)]="currentListingObject.image">
+  <label>Description:</label>
+  <input [(ngModel)]="currentListingObject.description">
+  <label>Category: </label>
+  <input [(ngModel)]="currentListingObject.category">
+  <label>Price:</label>
+  <input [(ngModel)]="currentListingObject.price">
+  <label>Time to Ship: </label>
+  <input [(ngModel)]="currentListingObject.shippingTime">
 </div>
 
-<div>
-  <app-marketplace></app-marketplace>
-</div>
+<button class="btn btn-success" (click)="updateListingInDatabase(currentListingObject)">Save</button>

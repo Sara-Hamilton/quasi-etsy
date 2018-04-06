@@ -26,4 +26,16 @@ export class ListingService {
   getLastListingId() {
     return this.database.list('listings');
   }
+
+
+  updateListing(localUpdatedListing) {
+    let projectInFirebase = this.getListingById(localUpdatedListing.$key);
+    projectInFirebase.update({image: localUpdatedListing.image,
+                              description: localUpdatedListing.description,
+                              category: localUpdatedListing.category,
+                              price: localUpdatedListing.price,
+                              shippingTime: localUpdatedListing.shippingTime,
+                            });
+  }
+
 }
