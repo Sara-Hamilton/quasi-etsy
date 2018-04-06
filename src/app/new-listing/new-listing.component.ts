@@ -15,8 +15,8 @@ export class NewListingComponent {
   constructor(private router: Router, private listingService: ListingService) { }
 
   // TODO figure out how make price display cents
-  submitListingForm(image: string, description: string, category: string, price: string, shippingTime: string) {
-    let newListing: Listing = new Listing (image, description, category, parseInt(price), shippingTime);
+  submitListingForm(image: string, shop: string, description: string, category: string, price: string, shippingTime: string) {
+    let newListing: Listing = new Listing (image, shop, description, category, parseInt(price), shippingTime);
     this.listingService.addListing(newListing);
     this.navigateToNewListing();
   }

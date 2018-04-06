@@ -31,6 +31,7 @@ export class ListingService {
   updateListing(localUpdatedListing) {
     let projectInFirebase = this.getListingById(localUpdatedListing.$key);
     projectInFirebase.update({image: localUpdatedListing.image,
+                              shop: localUpdatedListing.shop,
                               description: localUpdatedListing.description,
                               category: localUpdatedListing.category,
                               price: localUpdatedListing.price,

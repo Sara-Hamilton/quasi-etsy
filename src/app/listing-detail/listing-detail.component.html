@@ -12,7 +12,7 @@
         <img class="card-img-top resize" src="{{(listingToDisplay | async)?.image}}" alt="{{(listingToDisplay | async)?.description}}">
         <div class="card-body">
           <h5 class="card-text">{{(listingToDisplay | async)?.description}}</h5>
-          <div class="card-text">ShopNameHere</div>
+          <div class="card-text">{{(listingToDisplay | async)?.shop}}</div>
           <div class="card-text">${{(listingToDisplay | async)?.price}}.00</div><br>
         </div>
       </div>

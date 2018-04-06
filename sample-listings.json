@@ -1,17 +1,20 @@
 {"listings" : [{
   "image": "http://www.lebenslustiger.com/serendipity/uploads/GreyKnitBunny.jpg",
+  "shop": "Vim and Vinegar",
   "description": "cute knit bunny",
   "category": "Art & Collectibles",
   "price": "6",
   "shippingTime": "2-3 weeks"
   }, {
   "image": "http://www.wvpottery.com/handmadepottery/serving-dish-gg.jpg",
+  "shop": "Earth Dreams",
   "description": "decorative ceramic dish",
   "category": "Art & Collectibles",
   "price": "89",
   "shippingTime": "6 weeks"
   }, {
   "image": "http://ny-image3.etsy.com/il_fullxfull.56055027.jpg",
+  "shop": "Veggie Fun",
   "description": "handmade t-shirt with carrots on it for kids",
   "category": "Clothing & Shoes",
   "price": "12",
