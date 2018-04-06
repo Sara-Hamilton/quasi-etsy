@@ -63,27 +63,51 @@ This is the Epicodus weekly project for week 3 of the JavaScript course.  Its pu
 * JavaScript
 * Node JS
 * Angular
+* Firebase
 
-https://quasi-etsy.firebaseapp.com
+## Run the Application  
 
-## Installation
+1. ### Visit Deployed Website
+```
+https://quasi-etsy.firebaseapp.com  
+```
 
-clone the github respository
-```
-$ git clone https://github.com/Sara-Hamilton/quasi-etsy
-```
-move into the directory
-```
-$ cd quasi-etsy
-```
-install npm
-```
-$ npm install
-```
-run the program
-```
-$ ng serve --open
-```
+2. ### Install and Host Locally
+
+  clone the github respository
+  ```
+  $ git clone https://github.com/Sara-Hamilton/quasi-etsy
+  ```
+  #### Add Firebase Credentials
+  Create an account and get credentials from Firebase. https://firebase.google.com/   
+  Create a new project.  
+  Give it the name of your choice.  
+  Select your Country/Region.  
+  Choose the add Firebase to your web app option.  
+  Add a file named api-keys.ts in the src/app directory.  
+
+  Add the following code to the file with your credentials in place of xxxx.
+  ```
+  export var masterFirebaseConfig = {
+      apiKey: "xxxx",
+      authDomain: "xxxx.firebaseapp.com",
+      databaseURL: "https://xxxx.firebaseio.com",
+      storageBucket: "xxxx.appspot.com",
+      messagingSenderId: "xxxx"
+    };
+  ```
+  move into the directory
+  ```
+  $ cd quasi-etsy
+  ```
+  install npm
+  ```
+  $ npm install
+  ```
+  run the program
+  ```
+  $ ng serve --open
+  ```
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
