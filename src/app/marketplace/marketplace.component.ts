@@ -10,9 +10,11 @@ import { FirebaseListObservable } from 'angularfire2/database';
   styleUrls: ['./marketplace.component.css'],
   providers: [ListingService]
 })
+
 export class MarketplaceComponent implements OnInit {
   listings: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterByCategory: string = "";
 
   constructor(private router: Router, private listingService: ListingService) {}
 
@@ -24,10 +26,10 @@ export class MarketplaceComponent implements OnInit {
      this.router.navigate(['listings', clickedListing.$key]);
    };
 
-  filterByCategory: string = "";
-
-  onChange(clickedCategory) {
-    this.filterByCategory = clickedCategory;
-  }
+  // filterByCategory: string = "";
+  //
+  // onChange(clickedCategory) {
+  //   this.filterByCategory = clickedCategory;
+  // }
 
 }

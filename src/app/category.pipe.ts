@@ -9,10 +9,10 @@ import { Listing } from './models/listing.model';
 export class CategoryPipe implements PipeTransform {
   transform(input: Listing[], desiredCategory) {
     var output: Listing[] = [];
-    if ( desiredCategory === "") {
+    if (desiredCategory === "") {
       return input;
     } else {
-    for (var i=0; i < input.length; i++) {
+    for (var i = 0; i < input.length; i++) {
       if (input[i].category === desiredCategory) {
         output.push(input[i]);
       }
