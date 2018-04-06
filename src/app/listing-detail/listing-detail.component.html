@@ -14,6 +14,7 @@
           <h5 class="card-text">{{(listingToDisplay | async)?.description}}</h5>
           <div class="card-text">{{(listingToDisplay | async)?.shop}}</div>
           <div class="card-text">${{(listingToDisplay | async)?.price}}.00</div><br>
+          <div class="card-text">Time to Ship: {{(listingToDisplay | async)?.shippingTime}}</div>
         </div>
       </div>
       </li>
@@ -26,10 +27,3 @@
   <button class="btn btn-danger" (click)="deleteCurrentListingFromDatabase()">Delete</button>
   <app-edit-listing *ngIf="showEditForm" [selectedListing]="listingToDisplay"></app-edit-listing>
 <!-- </div> -->
-
-
-<footer class="footer">
-  <div class="container">
-    <a class="text-muted" (click)="administerPrivileges()">Admin</a>
-  </div>
-</footer>
