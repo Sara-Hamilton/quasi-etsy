@@ -1,3 +1,57 @@
 <p>
   edit-listing works!
 </p>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Listing to Shop</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Picture url:</label>
+        <br>
+        <input #newImage>
+      </div>
+
+      <div>
+        <label>Description:</label>
+        <br>
+        <input #newDescription>
+      </div>
+
+      <div>
+        <label>Category:</label>
+        <br>
+        <!-- <textarea #newCategory></textarea> -->
+        <select #newCategory>
+          <option value="Jewelry & Accessories">Jewelry & Accessories</option>
+          <option value="Clothing & Shoes">Clothing & Shoes</option>
+          <option value="Home & Living">Home & Living</option>
+          <option value="Wedding & Party">Wedding & Party</option>
+          <option value="Toys & Entertainment">Toys & Entertainment</option>
+          <option value="Art & Collectibles">Art & Collectibles</option>
+          <option value="Craft Supplies & Tools">Craft Supplies & Tools</option>
+          <option value="Vintage">Vintage</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Price:</label>
+        <br>
+        <input #newPrice>
+      </div>
+
+      <div>
+        <label>Amount of Time to Ship:</label>
+        <br>
+        <input #newShippingTime>
+      </div>
+      <button (click)="submitForm(newImage.value, newDescription.value, newCategory.value, newPrice.value, newShippingTime.value); newTitle.value=''; newImage.value=''; newDescription.value=''; newCategory.value=''; newPrice.value=''; newShippingTime.value=''">Add</button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <app-marketplace></app-marketplace>
+</div>
