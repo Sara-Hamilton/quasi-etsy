@@ -5,55 +5,61 @@
 ## By Sara Hamilton
 
 # Description
-This is the Epicodus weekly project for week 3 of the JavaScript course.  Its purpose is to display understanding of Angular.  
+This is the Epicodus weekly project for weeks 3 and 4 of the JavaScript course.  Its purpose is to display understanding of Angular.  
 
+## Current Functionality
+  ### User Stories
+  * a user can
+    * view listings
+    * filter listings by category
+    * create listings
+    * assign categories to listings
+    * edit listings
 
-### User Stories
+  ### Models
+    * User
+    * Listing
 
-* a user can
-  * create an account - needs to be done
-  * view listings - completed
-  * mark a listing as favorite - needs to be done
-  * mark a shop as favorite - needs to be done
-  * filter listings by category - needs to be done
-  * add items to a cart - needs to be done
-  * leave feedback about a transaction - needs to be done
+  ### Components
+    * new-listing
+    * marketplace 
 
+  ### Methods
+    * addUser
+    * addShop
+    * addListing
 
-* a user who is also a shop owner can
-  * create a shop - in process
-  * create listings - completed
-  * assign categories to listings - needs to be done
-  * edit listings - needs to be done
+  ### Pipes / Filtering Methods
+    * category
 
-### Models
-  * User - completed
-  * Shop - in process
-  * Listing - in process
-  * Category - completed
-  * Feedback - in process
+## Functionality to Implemented at a Future Date
+  ### User Stories
+  * a user will be able to
+    * create an account
+    * mark a listing as favorite
+    * mark a shop as favorite
+    * add items to a cart
+    * leave feedback about a transaction
+    * create a shop
 
-### Components
-  * new-user - completed
-  * new-shop - in process
-  * new-listing - completed
-  * listing-list - in process
-  * add-feedback - needs to be done
-  * edit-listing - needs to be done
+  ### Models
+    * Shop
+    * Feedback
 
-### Methods in app.component.ts
-  * addUser - completed
-  * addShop - completed
-  * addListing - completed
-  * addCategory - completed
-  * favoriteListing - needs to be done
-  * favoriteShop - needs to be done
-  * addToCart - needs to be done
+  ### Components
+    * new-user - in process
+    * new-shop - in process
+    * add-feedback - needs to be done
+    * edit-listing - needs to be done
 
-### Pipes
-  * shop - needs to be done
-  * category - needs to be done
-  * favorite - needs to be done
+  ### Methods
+    * favoriteListing - needs to be done
+    * favoriteShop - needs to be done
+    * addToCart - needs to be done
+
+  ### Pipes / Filtering Methods
+    * shop - needs to be done
+    * favorite - needs to be done
 
 
 ## Technologies Used
