@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Category } from './models/category.model';
 import { Feedback } from './models/feedback.model';
 import { Listing } from './models/listing.model';
 import { Shop } from './models/shop.model';
@@ -28,23 +27,6 @@ export class AppComponent {
     new Shop('4', "Urban Boutique", '02-04-2016', '4'),
   ]
 
-  masterCategoryList: Category[] = [
-    new Category('Jewelry & Accessories'),
-    new Category('Clothing & Shoes'),
-    new Category('Home & Living'),
-    new Category('Wedding & Party'),
-    new Category('Toys & Entertainment'),
-    new Category('Art & Collectibles'),
-    new Category('Craft Supplies & Tools'),
-    new Category('Vintage')
-  ]
-
-  // masterListingList: Listing[] = [
-  //   new Listing('http://www.lebenslustiger.com/serendipity/uploads/GreyKnitBunny.jpg', 'cute knit bunny', new Category('Art & Collectibles'), 6, "2-3 weeks", '1'),
-  //   new Listing('http://www.wvpottery.com/handmadepottery/serving-dish-gg.jpg', 'decorative ceramic dish', new Category('Art & Collectibles'), 89, "6 weeks", '2'),
-  //   new Listing('http://ny-image3.etsy.com/il_fullxfull.56055027.jpg', 'handmade t-shirt with carrots on it for kids', new Category('Clothing & Shoes'), 12, "1 week", '3'),
-  // ]
-
   addUser(newUser: User) {
     this.masterUserList.push(newUser);
   }
@@ -52,10 +34,6 @@ export class AppComponent {
   addShop(newShop: Shop) {
     this.masterShopList.push(newShop);
   }
-
-  // addListing(newListing: Listing) {
-  //   this.masterListingList.push(newListing);
-  // }
 
   addCategory(selectedListing, category) {
     selectedListing.category = category;

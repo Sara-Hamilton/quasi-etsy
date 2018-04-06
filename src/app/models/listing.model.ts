@@ -1,6 +1,5 @@
 import { User } from './user.model';
 import { Feedback } from './feedback.model';
-import { Category } from './category.model';
 
 export class Listing {
   public feedback: Feedback[] = [];
