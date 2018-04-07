@@ -35,7 +35,7 @@ This is the Epicodus weekly project for weeks 3 and 4 of the JavaScript course. 
 ## Functionality to Implemented at a Future Date
   ### User Stories
   * a user will be able to
-    * search listings 
+    * search listings
     * create an account
     * mark a listing as favorite
     * mark a shop as favorite
@@ -76,7 +76,7 @@ This is the Epicodus weekly project for weeks 3 and 4 of the JavaScript course. 
 
 1. ### Visit Deployed Website
 ```
-https://quasi-etsy.firebaseapp.com  
+https://etsy-clone-40e87.firebaseapp.com/ 
 ```
 
 2. ### Install and Host Locally
