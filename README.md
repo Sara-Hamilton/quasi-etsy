@@ -76,7 +76,7 @@ This is the Epicodus weekly project for weeks 3 and 4 of the JavaScript course. 
 
 1. ### Visit Deployed Website
 ```
-https://etsy-clone-40e87.firebaseapp.com/ 
+https://quasietsy2.firebaseapp.com/
 ```
 
 2. ### Install and Host Locally
