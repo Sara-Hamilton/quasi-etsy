@@ -28,8 +28,13 @@ export class MarketplaceComponent implements OnInit {
 
   // filterByCategory: string = "";
   //
-  // onChange(clickedCategory) {
+  // showCategory(clickedCategory) {
   //   this.filterByCategory = clickedCategory;
   // }
+
+  // showCategory(clickedCategory) {
+  //   this.filterByCategory = clickedCategory;
+  //   this.router.navigate(['', clickedCategory.$category]);
+  // };
 
 }

@@ -1,6 +1,7 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
+import { CategoryComponent } from './category/category.component';
 import { ListingDetailComponent } from './listing-detail/listing-detail.component';
 import { NewListingComponent } from './new-listing/new-listing.component';
 import { EditListingComponent } from './edit-listing/edit-listing.component';
@@ -9,6 +10,10 @@ const appRoutes: Routes = [
   {
     path: '',
     component: MarketplaceComponent
+  },
+  {
+    path: 'category/:category',
+    component: CategoryComponent
   },
   {
     path: 'listings/:id',

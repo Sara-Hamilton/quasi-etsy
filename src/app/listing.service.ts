@@ -7,6 +7,8 @@ import { Router } from '@angular/router';
 @Injectable()
 export class ListingService {
   listings: FirebaseListObservable<any[]>;
+  categorizedListings: Listing[] = [];
+  filterByCategory: string = "";
 
   constructor(private database: AngularFireDatabase, private router: Router) {
     this.listings = database.list('listings');

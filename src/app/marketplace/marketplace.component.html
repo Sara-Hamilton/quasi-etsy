@@ -1,7 +1,7 @@
 <br>
 
-<nav class="navbar navbar-expand-sm bg-light categories">
-  <ul class="navbar-nav">
+<!-- <nav class="navbar navbar-expand-sm bg-light categories">
+  <ul class="navbar-nav nav-justified">
     <li class="nav-item" (click)="filterByCategory = ''">View All</li>
     <li class="nav-item" (click)="filterByCategory = 'Jewelry and Accessories'">Jewelry & Accessories</li>
     <li class="nav-item" (click)="filterByCategory = 'Clothing and Shoes'">Clothing & Shoes</li>
@@ -13,6 +13,21 @@
     <li class="nav-item" (click)="filterByCategory = 'Vintage'">Vintage</li>
   </ul>
 </nav>
+
+<nav class="navbar navbar-expand-sm bg-light categories">
+  <ul class="navbar-nav nav-justified">
+    <li><a routerLink="category/jewelry-accessories">Jewelry & Accessories</a></li>
+    <li class="nav-item" (click)="filterByCategory = ''">View All</li>
+    <li class="nav-item" (click)="filterByCategory = 'Jewelry and Accessories'">Jewelry & Accessories</li>
+    <li class="nav-item" (click)="filterByCategory = 'Clothing and Shoes'">Clothing & Shoes</li>
+    <li class="nav-item" (click)="filterByCategory = 'Home and Living'">Home & Living</li>
+    <li class="nav-item" (click)="filterByCategory = 'Wedding and Party'">Wedding & Party</li>
+    <li class="nav-item" (click)="filterByCategory = 'Toys and Entertainment'">Toys & Entertainment</li>
+    <li class="nav-item" (click)="filterByCategory = 'Art and Collectibles'">Art & Collectibles</li>
+    <li class="nav-item" (click)="filterByCategory = 'Craft Supplies and Tools'">Craft Supplies & Tools</li>
+    <li class="nav-item" (click)="filterByCategory = 'Vintage'">Vintage</li>
+  </ul>
+</nav> -->
 
 <div class="row">
   <div *ngFor="let listing of listings | async | category:filterByCategory" (click)="goToDetailPage(listing)" class="col-sm-6 col-md-4 col-lg-3 listing">

@@ -15,6 +15,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { EditListingComponent } from './edit-listing/edit-listing.component';
 import { CategoryPipe } from './category.pipe';
+import { CategoryComponent } from './category/category.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +33,8 @@ export const firebaseConfig = {
     MarketplaceComponent,
     ListingDetailComponent,
     EditListingComponent,
-    CategoryPipe
+    CategoryPipe,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,

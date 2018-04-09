@@ -11,6 +11,7 @@ import { User } from './models/user.model';
 })
 export class AppComponent {
   title = 'Quasi Etsy';
+  filterByCategory: string = "";
 
   masterUserList: User[] = [
     new User('Jenna', 'jenna@example.com', 'Portland', 'OR', '01-12-2010'),
