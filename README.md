@@ -74,12 +74,11 @@ This is the Epicodus weekly project for weeks 3 and 4 of the JavaScript course. 
 
 ## Run the Application  
 
-1. ### Visit Deployed Website
-```
-https://quasietsy2.firebaseapp.com/
-```
+### Option 1. Visit Deployed Website
 
-2. ### Install and Host Locally
+https://quasietsy2.firebaseapp.com/
+
+### Option 2. Install and Host Locally
 
   clone the github respository
   ```
